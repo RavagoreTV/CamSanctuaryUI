@@ -306,3 +306,8 @@ ul {
   text-align: center;
 }
 
+.display {
+  border-radius: 5px;
+  background-color: rgb(143, 143, 143);
+  padding: 20px;
+}
