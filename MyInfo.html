@@ -13,80 +13,59 @@
 </head>
 
 <body>
-    <div id="app">
-        <ul>
-            <li><a style="color: black;text-align: center;" href="index.html"><img src="Menu.png" alt="Forside"
-                        width="25" height="25">
-                    <center>Forside</center>
-                </a></li>
-            <li><a style="color: black;text-align: center;" href="Kameraer.html"><img src="Kamera.png" alt="Kameraer"
-                        width="25" height="25">
-                    <center>Kameraer</center>
-                </a></li>
-            <li><a style="color: black;text-align: center;" href="Optagelser.html"><img src="Video.png" alt="Video"
-                        width="25" height="25">
-                    <center>Optagelser</center>
-                </a></li>
-            <li><a style="color: black;text-align: center;" href="About.html"><img src="About.png" alt="About"
-                        width="25" height="25">
-                    <center>About</center>
-                </a></li>
-            <li><a style="color: black; text-align:  center;" href="FBI.html"><img src="FBI.png" alt="FBI" width="50"
-                        height="25">
-                    <center>FBI Most Wanted</center>
-                </a></li>
-            <li style="float: right; border-radius: 5px; background-color: rgb(143, 143, 143); padding: 20px;">
-                <div class="custom-switch custom-switch-label-status pl-0">
-                    <input class="custom-switch-input" id="checkbox" type="checkbox">
-                    <label class="custom-switch-btn" for="checkbox"></label>
-                </div>
-            </li>
-        </ul>
 
-        <h1 style="text-align: center;">My information</h1>
-
-        <div style="border: 1pt; border-style: solid; padding: 20pt">
-            <input v-model="info" type="text" placeholder="First name" id="firstName" />
-            <input v-model="info" type="text" placeholder="Email" id="email" />
-            <input v-model="info" type="text" placeholder="Phonenumber" id="infoInput" />
-            <button v-on:click="save(info)" id="saveButton" >Save</button>
-            <button v-on:click="show" id="showButton">Show</button>
-            <span id="output">{{message}}</span>
-          </div>
-        <div class="container">
-            <div class="card body">
-                <form>
-                    <label for="Fornavn">Fornavn: </label>
-                    <br>
-                    <input type="text" id="Fornavn" name="Fornavn">
-                    <br>
-                    <label for="Efternavn">Efternavn: </label>
-                    <br>
-                    <input type="text" id="Efternavn" name="Efternavn">
-                    <br>
-                    <label for="Mobil">Mobil: </label>
-                    <br>
-                    <input type="text" id="Mobil" name="Mobil">
-                    <br>
-                    <label for="Adresse">Adresse: </label>
-                    <br>
-                    <input type="text" id="Adresse" name="Adresse">
-                    <br>
-                    <button></button>
-                </form>
+    <ul>
+        <li><a style="color: black;text-align: center;" href="index.html"><img src="Menu.png" alt="Forside" width="25"
+                    height="25">
+                <center>Forside</center>
+            </a></li>
+        <li><a style="color: black;text-align: center;" href="Kameraer.html"><img src="Kamera.png" alt="Kameraer"
+                    width="25" height="25">
+                <center>Kameraer</center>
+            </a></li>
+        <li><a style="color: black;text-align: center;" href="Optagelser.html"><img src="Video.png" alt="Video"
+                    width="25" height="25">
+                <center>Optagelser</center>
+            </a></li>
+        <li><a style="color: black;text-align: center;" href="About.html"><img src="About.png" alt="About" width="25"
+                    height="25">
+                <center>About</center>
+            </a></li>
+        <li><a style="color: black; text-align:  center;" href="FBI.html"><img src="FBI.png" alt="FBI" width="50"
+                    height="25">
+                <center>FBI Most Wanted</center>
+            </a></li>
+        <li style="float: right; border-radius: 5px; background-color: rgb(143, 143, 143); padding: 20px;">
+            <div class="custom-switch custom-switch-label-status pl-0">
+                <input class="custom-switch-input" id="checkbox" type="checkbox">
+                <label class="custom-switch-btn" for="checkbox"></label>
             </div>
-        </div>
-        <br />
+        </li>
+    </ul>
 
-
-        <div class="footer">
-            <p>
-                Support kontaktoplysninger: <br>
-                Navn: CamSanctuary Hotline <br>
-                Mail: CamSanctuary@gmail.com <br>
-                Mobil: +45 31 20 58 06</p>
+    <h1 style="text-align: center;">My information</h1>
+    <div id="app">
+        <div style="border: 1pt; border-style: solid; padding: 20pt">
+                <label for="Firstname">Firstname:</label> <br> <input v-model="firstName" type="text" placeholder="First name" id="firstName" /> 
+                <br>
+                <label for="Email">Email:</label> <br> <input v-model="email" type="text" placeholder="Email" id="email" />
+                <br>
+                <label for="Phonenumber">Phonenumber:</label> <br> <input v-model="phonenumber" type="text" placeholder="Phonenumber" id="phonenumber" />
+                <br>
+                <button v-on:click="save(firstName, email, phonenumber)" id="saveButton">Save</button>
+                <button v-on:click="show()" id="showButton">Show</button>
+                <span id="output">{{message}}</span>
         </div>
     </div>
+
+    <div class="footer">
+        <p>
+            Support kontaktoplysninger: <br>
+            Navn: CamSanctuary Hotline <br>
+            Mail: CamSanctuary@gmail.com <br>
+            Mobil: +45 31 20 58 06</p>
+    </div>
+
 
     <script src="js/myInfo.js"></script>
 </body>

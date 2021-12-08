@@ -1,14 +1,17 @@
 Vue.createApp({
     data() {
         return {
-            info: null, 
+            firstName: null, 
+            email: null,
+            phonenumber: null,
             information: [],
             message: null
         }
     },
     methods: {
-        save(info) {
-            this.information.push(info)
+        save(firstName, email, phonenumber) {
+            this.information.push(firstName, email, phonenumber)
+            console.log(firstName, email, phonenumber)
         },
         show() {
             if (this.information == null || this.information.length == 0) {
