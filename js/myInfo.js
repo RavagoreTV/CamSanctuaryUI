@@ -1,27 +1,22 @@
 Vue.createApp({
     data() {
         return {
-            
-            logs: []
+            info: null, 
+            information: [],
+            message: null
         }
     },
     methods: {
-        getAllWanted() {
-            this.helperGetAndShow(baseUrl)
+        save(info) {
+            this.information.push(info)
         },
-        async helperGetAndShow(url) { 
-            console.log(url)
-            try {
-                const response = await axios.get(url)
-                console.log("Efter get")
-                this.wanted = await response.data.items
-                console.log(this.wanted)
-            } catch (ex) {
-                alert(ex.message) 
+        show() {
+            if (this.information == null || this.information.length == 0) {
+                this.message = "empty"
             }
-        },
-        getDetails(title) {
-            this.detail = this.items.find(item => item.title == title)
-        },
+            else {
+                this.message = this.information.toString()
+            }
+        }
     }
 }).mount("#app")
