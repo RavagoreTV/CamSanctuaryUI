@@ -15,14 +15,11 @@ Vue.createApp({
             try {
                 const response = await axios.get(url)
                 console.log("Efter get")
-                this.wanted = await response.data.items
-                console.log(this.wanted)
+                this.logs = await response.data.items
+                console.log(this.logs)
             } catch (ex) {
                 alert(ex.message) 
             }
-        },
-        getDetails(title) {
-            this.detail = this.items.find(item => item.title == title)
-        },
+        }
     }
 }).mount("#app")
