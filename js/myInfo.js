@@ -1,8 +1,7 @@
-const baseUrl = "https://camsanctuary.azurewebsites.net/api/sender"
-
 Vue.createApp({
     data() {
         return {
+            
             logs: []
         }
     },
