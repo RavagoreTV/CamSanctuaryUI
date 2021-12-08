@@ -34,7 +34,7 @@
         <ul style="background-color: white;" id="wantedList" v-if="wanted" >
             <li style="background-color: white;" v-for="want in wanted">
                 <div>
-                    <img v-bind:src="want.images[0].thumb"></img>
+                    <img width="250" height="250" style="float: left;" v-bind:src="want.images[0].thumb"></img>
                     <a style="background-color: white;">Navn: {{want.title}} </a>
                     <a style="background-color: white;">Født: {{want.dates_of_birth_used}} </a>
                     <a style="background-color: white;">Køn: {{want.sex}} </a>
