@@ -57,8 +57,8 @@
                 <br>
                 <label>Phonenumber:</label> <br> <input v-model="phonenumber" type="text" placeholder="Phonenumber" id="phonenumber" />
                 <br>
-                <button v-on:click="save(firstName, email, phonenumber)" id="saveButton">Save</button>
-                <button v-on:click="show()" id="showButton">Show</button>
+                <button v-on:click="save(firstName, email, phonenumber)" id="saveButton" class="btn btn-default" style="background-color: rgb(143, 143, 143);">Save</button>
+                <button v-on:click="show()" id="showButton" class="btn btn-default" style="background-color: rgb(143, 143, 143);">Show</button>
                 <span id="output">{{message}}</span>
         </div>
     </div>
