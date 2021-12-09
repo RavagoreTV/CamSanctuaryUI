@@ -3,7 +3,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(143, 143, 143);
+    background-color: rgb(255, 136, 0);
   }
   
     
@@ -297,7 +297,7 @@ ul {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(143, 143, 143);
+  background-color: rgb(255, 136, 0);
   color: black;
   text-align: center;
   position: fixed;

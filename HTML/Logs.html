@@ -39,7 +39,7 @@
           src="../Images/myinformation.png" alt="myinfo" width="25" height="25">
           <p style="text-align: center;">My Contact Information</p>
       </a></li>
-    <li style="float: right; border-radius: 5px; background-color: rgb(143, 143, 143); padding: 20px;">
+    <li style="float: right; border-radius: 5px; background-color: rgb(255, 136, 0); padding: 20px;">
       <div class="custom-switch custom-switch-label-status pl-0">
         <h6>Security system status</h6>
         <input class="custom-switch-input" id="checkbox" type="checkbox">
@@ -52,8 +52,8 @@
   <h1>Logging</h1>
   <div id="app">
     <h6>Get all the logging from the motion sensor</h6>
-    <button id="getAllLogsButton" v-on:click="getAllLogs()" class="btn btn-default"
-      style="background-color: rgb(143, 143, 143);">Get all logging</button>
+    <button id="getAllLogsButton" v-on:click="getAllLogs()" class="btn btn-warning"
+      style="background-color: rgb(255, 136, 0);">Get all logging</button>
     <br />
 
     <table class="table table-striped table-bordered" v-if="logs">
