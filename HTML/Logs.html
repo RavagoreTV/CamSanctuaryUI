@@ -56,22 +56,31 @@
       style="background-color: rgb(143, 143, 143);">Get all logging</button>
     <br />
 
-    <ul style="background-color: white;" id="loggingList" v-if="logs">
-      <li v-for="log in logs">
-        Dato: {{log.date}} Placement: {{log.piMessage}}
-      </li>
-    </ul>
+    <table class="table table-striped table-bordered" v-if="logs">
+      <thead>
+        <th>Date: </th>
+        <th>Placement: </th>
+      </thead>
+
+      <tbody>
+        <tr v-for="log in logs">
+          <td>{{log.date}}</td>
+          <td>{{log.piMessage}}</td>
+        </tr>
+      </tbody>
+    </table>
     <div v-else>No logs indexed</div>
+
   </div>
   <script src="../js/index.js"></script>
 
 
   <div class="footer">
     <p>
-      Support kontaktoplysninger: <br>
-      Navn: CamSanctuary Hotline <br>
-      Mail: CamSanctuary@gmail.com <br>
-      Mobil: +45 31 20 58 06</p>
+      Support Contact information: <br>
+      Name: CamSanctuary Hotline <br>
+      Email: CamSanctuary@gmail.com <br>
+      Mobile: +45 31 20 58 06</p>
   </div>
 
 
