@@ -7,7 +7,7 @@ Vue.createApp({
         }
     },
     methods: {
-        getAllWanted() {
+        getAllLogs() {
             this.helperGetAndShow(baseUrl)
         },
         async helperGetAndShow(url) { 
@@ -15,7 +15,7 @@ Vue.createApp({
             try {
                 const response = await axios.get(url)
                 console.log("Efter get")
-                this.logs = await response.data.items
+                this.logs = await response.data
                 console.log(this.logs)
             } catch (ex) {
                 alert(ex.message) 

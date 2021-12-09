@@ -11,28 +11,28 @@
     <title>FBI most wanted</title>
 </head>
 <body>
-  <ul>
-    <li><a style="color: black;text-align: center;" href="index.html"><img src="../Images/Menu.png" alt="Forside" width="25"
+  <ul style="list-style-type: none">
+    <li style="float: left"><a style="color: black;text-align: center;" href="index.html"><img src="../Images/Menu.png" alt="Forside" width="25"
           height="25">
-        <center>Forside</center>
+        <center>Front page</center>
       </a></li>
-    <li><a style="color: black;text-align: center;" href="Logs.html"><img src="../Images/Kamera.png" alt="Kameraer" width="25"
+    <li style="float: left"><a style="color: black;text-align: center;" href="Logs.html"><img src="../Images/Kamera.png" alt="Kameraer" width="25"
           height="25">
-        <center>Kameraer</center>
+        <center>Logging</center>
       </a></li>
-    <li><a style="color: black;text-align: center;" href="Optagelser.html"><img src="../Images/Video.png" alt="Video" width="25"
+    <li style="float: left"><a style="color: black;text-align: center;" href="Optagelser.html"><img src="../Images/Video.png" alt="Video" width="25"
           height="25">
-        <center>Optagelser</center>
+        <center>Recordings</center>
       </a></li>
-    <li><a style="color: black;text-align: center;" href="About.html"><img src="../Images/About.png" alt="About" width="25"
+    <li style="float: left"><a style="color: black;text-align: center;" href="About.html"><img src="../Images/About.png" alt="About" width="25"
           height="25">
         <center>About</center>
       </a></li>
-    <li><a style="color: black; text-align:  center;" href="FBI.html"><img src="../Images/FBI.png" alt="FBI" width="50"
+    <li style="float: left"><a style="color: black; text-align:  center;" href="FBI.html"><img src="../Images/FBI.png" alt="FBI" width="50"
           height="25">
         <center>FBI Most Wanted</center>
       </a></li>
-      <li><a style="color: black; text-align:  center;" href="MyInfo.html"><img src="../Images/myinformation.png" alt="myinfo" width="25"
+      <li style="float: left"><a style="color: black; text-align:  center;" href="MyInfo.html"><img src="../Images/myinformation.png" alt="myinfo" width="25"
         height="25">
       <center>My Contact Information</center>
     </a></li>
@@ -51,16 +51,13 @@
         <br/>
         
 
-        <ul style="background-color: white;" id="wantedList" v-if="wanted" >
-            <li style="background-color: white;" v-for="want in wanted">
-                <div>
+        <ul style="background-color: white; list-style-type: none" id="wantedList" v-if="wanted" >
+            <li style="background-color: white; float: left;" v-for="want in wanted">
                     <img width="250" height="250" style="float: left;" v-bind:src="want.images[0].thumb"></img>
-                    <a style="background-color: white;">Navn: {{want.title}} </a>
-                    <a style="background-color: white;">Født: {{want.dates_of_birth_used}} </a>
-                    <a style="background-color: white;">Køn: {{want.sex}} </a>
-                    <a style="background-color: white;">Emne: {{want.subjects}} </a> <br>
-                    
-                </div>
+                    Navn: {{want.title}} 
+                    Født: {{want.dates_of_birth_used}} 
+                    Køn: {{want.sex}} 
+                    Emne: {{want.subjects}}  <br>
             </li>
         </ul>
         <div v-else>No such wanted title</div>
