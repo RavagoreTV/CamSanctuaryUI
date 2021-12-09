@@ -52,8 +52,8 @@
         
 
         <ul style="background-color: white; list-style-type: none" id="wantedList" v-if="wanted" >
-            <li style="background-color: white; float: left;" v-for="want in wanted">
-                    <img width="250" height="250" style="float: left;" v-bind:src="want.images[0].thumb"></img>
+            <li style="background-color: white; float: left;" v-for="want in wanted"> 
+                    <img width="250" height="250" style="float: left;" v-bind:src="want.images[0].thumb">
                     Navn: {{want.title}} 
                     Født: {{want.dates_of_birth_used}} 
                     Køn: {{want.sex}} 
