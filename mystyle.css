@@ -6,10 +6,7 @@ ul {
     background-color: rgb(143, 143, 143);
   }
   
-  li {
-    /* float: left; */
-  }
-  
+    
   li a, .dropbtn {
     display: inline-block;
     color: white;
