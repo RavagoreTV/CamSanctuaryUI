@@ -112,7 +112,7 @@ ul {
         height: 38px;
         margin: 0;
         padding: 4px;
-        background: #adb5bd;
+        background: red;
         border-radius: 76px;
         transition: all 150ms ease; }
         .custom-switch .custom-switch-input + .custom-switch-btn:after, .custom-switch .custom-switch-input + .custom-switch-btn:before {
